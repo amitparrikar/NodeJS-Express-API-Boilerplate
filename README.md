@@ -1,6 +1,6 @@
-<h2>NodeJS Express API Application Boilerplate</h2>
+<h2>NodeJS-Express API Application Boilerplate</h2>
 
-<h5>General instruction and introduction to this project.</h5>
+<h4>General instruction and introduction to this project.</h4>
 <b>This project focus on:</b>
         <ul>
                 <li>How to use best practices in the NodeJS-Express API application.</li>
@@ -15,12 +15,13 @@
 
 <b>This project is a very good start for any complex enterprise level application. It has the following features like:</b>
         <ul>
-                <li>Error logging.</li>
-                <li>Mongodb connection.</li>
-                <li>Modules can be easily decoupled. for egs any other db can be plugged in without much code change</li>
-                <li>Session timeout for every REST call.</li>
+                <li>MVC pattern</li>
+                <li>Error logging</li>
+                <li>Mongodb connection</li>
+                <li>Modules can be easily decoupled. for example any other database can be plugged in without much code change</li>
+                <li>Session timeout for REST call</li>
                 <li>Node clustering and auto recovery when a node dies</li>
-                <li>It has demo CRUD API's for a user.</li>
+                <li>It has a sample CRUD API's for a user model</li>
         </ul>
 
 <b>Steps to get Up & Running</b>
@@ -37,20 +38,12 @@
 
 <b>Introduction to the project folder structure</b>
         <ul>
-                <li><code></code></li>
-                <li><code></code></li>
-                <li><code></code></li>
-                <li><code></code></li>
-                <li><code></code></li>
-                <li><code></code></li>
-                <li><code></code></li>
-                <li><code></code></li><li><code></code></li>
+                <li><code>/config</code>&nbsp;&nbsp;&nbsp;All the configuration files related to the project</li>
+                <li><code>/controllers</code>&nbsp;&nbsp;&nbsp;All the controllers which is nothing but the exposed REST end points</li>
+                <li><code>/helpers</code>&nbsp;&nbsp;&nbsp;Files which serve utility functions throughout the application</li>
+                <li><code>/logs</code>&nbsp;&nbsp;&nbsp;Files that has real time application logs</li>
+                <li><code>/middlewares</code>&nbsp;&nbsp;&nbsp;All the custom middleware layers on express framework</li>
+                <li><code>/models </code>&nbsp;&nbsp;&nbsp;Files which actually talks to the db</li>
+                <li><code>/public</code>&nbsp;&nbsp;&nbsp;Static files which are exposed as a Static Folder</li>
+                <li><code>/tests</code>&nbsp;&nbsp;&nbsp;All the unit test files</li>
         </ul>
-/config             -it contains all the configuration files related to the project.
-/controllers        -it contains all the controllers which is nothing but the exposed REST end points
-/helpers            -it contains files which server utility functions throughout the application
-/logs               -it contains files that has logs
-/middlewares        -it contains all the custom middleware layers on express framework
-/models             -it contains files which actually talks to the db
-/public             -it contains all the static files which are exposed as a Static Folder
-/tests              -it contains all the unit test files
