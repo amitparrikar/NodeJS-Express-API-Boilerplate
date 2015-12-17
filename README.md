@@ -1,36 +1,51 @@
-GENERAL INSTRUCTION AND INTRODUCTION TO THIS PROJECT.
+<h2>NodeJS Express API Application Boilerplate</h2>
 
-This project focus on:
-    1) How to use best practices which has to be used in the NodeJS-Express API application.
-    2) How to design a modular application.
-    3) How to have different tiers in your application.
+<h5>General instruction and introduction to this project.</h5>
+<b>This project focus on:</b>
+        <ul>
+                <li>How to use best practices in the NodeJS-Express API application.</li>
+                <li>How to design a modular application.</li>
+                <li>How to have different tiers in your application.</li>
+        </ul>
 
-This project does not focus on:
-    1) Frontend design, However front end design is done using AngularJS.
+<b>This project does not focus on:</b>
+        <ul>
+                <li>Frontend design, However front end design is done using AngularJS.</li>
+        </ul>
 
+<b>This project is a very good start for any complex enterprise level application. It has the following features like:</b>
+        <ul>
+                <li>Error logging.</li>
+                <li>Mongodb connection.</li>
+                <li>Modules can be easily decoupled. for egs any other db can be plugged in without much code change</li>
+                <li>Session timeout for every REST call.</li>
+                <li>Node clustering and auto recovery when a node dies</li>
+                <li>It has demo CRUD API's for a user.</li>
+        </ul>
 
-This project is a very good start for any complex enterprise level application. it has the following features like:
-    1) Error logging.
-    2) Mongodb connection.
-    3) Modules can be easily decoupled. for egs any other db can be plugged in without much code change
-    4) Session timeout for every REST call.
-    5) It has demo CRUD API's for  a user.
+<b>Steps to get Up & Running</b>
+        <ul>
+                <li>Install NodeJS</li>
+                <li>Install MongoDB</li>
+                <li>Start MongoDB server</li>
+                <li>Go to the project directory and run the command <code>npm install</code>. This will install all the node dependencies</li>
+                <li>Go to the project directory and run the command  <code>grunt</code>. This will start the server</li>
+                <li>Go to the browser and open <code>http://localhost:3000</code></li>
+        </ul>
+        
+<p>The landing page has a login section and register a new user section. Create a sample user and try login with it. Upon successful login a panel will be shown from where you can configure your REST calls for demo purpose. This project has a frontend part developed in Angularjs.</p>
 
-
-This project has a frontend part developed in angularjs which is a Login and Register new user screen,
-and upon logged in you can play around with the API's you have created.
-
-
-STEPS TO START THE PROJECT
-1) Install NodeJS
-2) Install MongoDB
-3) Start MongoDB server
-4) Go to the project directory and run the command 'npm install'. This will install all the node dependencies
-5) Go to the project directory and run the command  'grunt'. This will start the server
-6) Go to the browser and open http://localhost:3000
-
-
-INTRODUCTION TO THE FOLDER STRUCTURE:
+<b>Introduction to the project folder structure</b>
+        <ul>
+                <li><code></code></li>
+                <li><code></code></li>
+                <li><code></code></li>
+                <li><code></code></li>
+                <li><code></code></li>
+                <li><code></code></li>
+                <li><code></code></li>
+                <li><code></code></li><li><code></code></li>
+        </ul>
 /config             -it contains all the configuration files related to the project.
 /controllers        -it contains all the controllers which is nothing but the exposed REST end points
 /helpers            -it contains files which server utility functions throughout the application
