@@ -1,6 +1,8 @@
 <h2>NodeJS-Express API Application Boilerplate</h2>
 
 <h4>General instruction and introduction to this project.</h4>
+<p>This is an advanced boilerplate. i assume that you have a basic knowledge of NodeJS, Express API framework, How to install node module, Basics of mongodb database, How to import and export module.</p>
+
 <b>This project focus on:</b>
         <ul>
                 <li>How to use best practices in the NodeJS-Express API application.</li>
@@ -27,6 +29,7 @@
 <b>Steps to get Up & Running</b>
         <ul>
                 <li>Install NodeJS</li>
+                <li>Install Grunt</li>
                 <li>Install MongoDB</li>
                 <li>Start MongoDB server</li>
                 <li>Go to the project directory and run the command <code>npm install</code>. This will install all the node dependencies</li>
