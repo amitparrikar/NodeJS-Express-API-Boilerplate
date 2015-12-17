@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Express API</title>
+    <meta name="viewport" content="initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body ng-app="ExpressApp" ng-controller="expressController">
+    <header>
+        <nav class="nav1">
+            <h2 class="title">Express API Application</h2>
+        </nav>
+        <nav class="nav2">
+            <button ng-click="showLogin = !showLogin" ng-show="!showLogin">Login</button>
+        </nav>
+    </header>
+    <section class="box-container">
+
+        <article ng-show="showLogin" class="boxItem">
+            <!--login section-->
+            <div class="boxItem-header">
+                <h3>Login</h3>
+            </div>
+            <form ng-submit="login()">
+                <div class="formItem">
+                    <label for="txtEmail">Email:</label>
+                    <input id="txtEmail" name="email" type="text" placeholder="Your Email" ng-model="user.email">
+                </div>
+                <div class="formItem">
+                    <label for="txtPassword">Password:</label>
+                    <input id="txtPassword" name="password" type="password" placeholder="Your Password" ng-model="user.password">
+                </div>
+                <div class="formItem">
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+        </article>
+        <article class="boxItem">
+            <!--create new user section-->
+            <div class="boxItem-header">
+                <h3>Create a new User</h3>
+            </div>
+            <form ng-submit="createNew()">
+                <div class="formItem">
+                    <label for="name">Name: </label>
+                    <input id="name" type="text" ng-model="newUser.name" placeholder="New Username">
+                </div>
+                <div class="formItem">
+                    <label for="email">Email: </label>
+                    <input id="email" type="text" ng-model="newUser.email" placeholder="Your Email">
+                </div>
+                <div class="formItem">
+                    <label for="password">Password: </label>
+                    <input id="password" type="password" ng-model="newUser.password" placeholder="Choose a Password">
+                </div>
+                <div class="formItem">
+                    <button type="submit">Create New</button>
+                </div>
+            </form>
+        </article>
+    </section>
+    <!--<section class="bottomContainer" ng-show="!showLogin">-->
+    <section class="box-container" ng-show="!showLogin">
+        <article class="boxItem">
+            <div class="boxItem-header">
+                <h3>Enter API details to test </h3>
+            </div>
+            <div class="formItem">
+                <label>Url: </label>
+                <select name="urlPath" id="urlPath" ng-model="apiConfig.url" ng-options="item.url as item.desc for item in urlObj" required>
+                    <option value="">Select URL</option>
+                    <option value="item.url">{{item.desc}}</option>
+                </select>
+            </div>
+            <div class="formItem">
+                <label>Method: </label>
+                <select ng-model="apiConfig.method" ng-options="url for url in methodObj" required>
+                    <option value="">Select Method</option>
+                </select>
+            </div>
+            <div class="formItem">
+                <label>Data: </label>
+                <textarea ng-model="apiConfig.data"></textarea>
+            </div>
+            <div class="formItem">
+                <button ng-click="fireAPI()">Run</button>
+            </div>
+        </article>
+        <article class="boxItem">
+            <div class="boxItem-header">
+                <h3>API Response: </h3>
+            </div>
+            <code>{{apiOutput}}</code>
+        </article>
+    </section>
+    <footer>
+        <div>
+            <p><code>Developed by <strong>Amit Parrikar</strong></code></p>
+            <code>Available on </code>
+            <a href="https://github.com/amitparrikar"><img src="img/github-icon.png"></a>
+            <a href="https://in.linkedin.com/in/amit-parrikar-a62aaa5b"><img src="img/linkedin-icon.png"></a>
+        </div>
+
+
+    </footer>
+
+
+    <script type="text/javascript" src="libs/angular.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>

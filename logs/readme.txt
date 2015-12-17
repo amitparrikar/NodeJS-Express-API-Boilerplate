@@ -1,0 +1,1 @@
+All log files are stored in this folder

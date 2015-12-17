@@ -1,0 +1,123 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+ footer{
+     position: fixed;
+     background-color: #673AB7;
+     width: 100%;
+     color: white;
+     bottom: 0px;
+     height: 65px;
+     padding-left: 15px;
+     box-shadow: 0px 2px 15px #E91E63;
+ }
+
+ header{
+     box-shadow: 2px 0px 15px #E91E63;
+ }
+
+ nav button{
+     float: right;
+ }
+ strong{
+    font-size: 25px;
+ }
+.box-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.boxItem {
+    -webkit-flex: 1;
+    -webkit-flex: 1;
+    border: 2px solid #B39DDB;
+    background-color: #FCF9FF;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px gray;
+}
+.boxItem-header{
+    background-color: #B39DDB;
+    height: 35px;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    font-size: larger;
+    line-height: 30px;
+}
+
+.title{
+    line-height: 55px;
+    font-size: 60px;
+    color: white;
+    margin-left: 20px;
+}
+.nav1{
+    background-color: #B388FF;
+    height: 30px;
+}
+.nav2{
+    background-color: #7C4DFF;
+    height: 30px;
+}
+
+label{
+    font-size: 24px;
+    color: #838383;
+}
+input[type="text"], input[type="password"], select{
+    height: 25px;
+    font-size: 20px;
+    border: 0px;
+    outline-width: 0px;
+    background-color: #FCF9FF;
+    border-bottom: 2px solid #D1C4E9;
+}
+
+button{
+    width: 100px;
+    background-color: #5E35B1;
+    height: 25px;
+    border-radius: 7px;
+    color: white;
+    font-size: medium;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #512DA8;
+}
+
+.formItem {
+    width: 470px;
+    margin-top: 15px;
+}
+.formItem input{
+    float: right;
+    width: 320px;
+    /*background-color: #FCF9FF;*/
+}
+.formItem button{
+    float: right;
+}
+.formItem select{
+    float: right;
+    width: 320px;
+    /*background-color: #FCF9FF;*/
+    /*border: 0px;*/
+    /*border-bottom: 2px solid #D1C4E9;*/
+}
+.formItem textarea{
+    float: right;
+    height: 40px;
+    width: 320px;
+
+}
+.form
+.height-65{
+    height: 65px;
+}
