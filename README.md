@@ -34,7 +34,7 @@
                 <li>Go to the browser and open <code>http://localhost:3000</code></li>
         </ul>
         
-<p>The landing page has a login section and register a new user section. Create a sample user and try login with it. Upon successful login a panel will be shown from where you can configure your REST calls for demo purpose. This project has a frontend part developed in Angularjs.</p>
+<p>The landing page has a login section and register a new user section. Create a sample user and try login with it. Upon successful login a panel will be shown from where you can configure your REST calls for demo purpose.</p>
 
 <b>Introduction to the project folder structure</b>
         <ul>
