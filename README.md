@@ -50,3 +50,6 @@
                 <li><code>/public</code>&nbsp;&nbsp;&nbsp;Static files which are exposed as a Static Folder</li>
                 <li><code>/tests</code>&nbsp;&nbsp;&nbsp;All the unit test files</li>
         </ul>
+
+<h2>License</h2>
+<p>MIT</p>
